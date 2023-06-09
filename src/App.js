@@ -9,7 +9,7 @@ import { ROUTES } from "./routes"
 import { RecoilDevTools } from "recoil-toolkit"
 
 import { Amplify } from "aws-amplify"
-import awsmobile from "./aws-exports"
+import awsmobile from "../src/aws-exports"
 
 Amplify.configure(awsmobile)
 
