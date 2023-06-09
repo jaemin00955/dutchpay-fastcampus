@@ -8,6 +8,7 @@ import { CenteredOverlayForm } from "./shared/CenteredOverlayForm";
 import { API } from "aws-amplify";
 import { ROUTE_UTILS } from "../routes";
 
+//
 export const CreateGroup = () => {
   const [validated, setValidated] = useState(false);
   const [validGroupName, setValidGroupName] = useState(false);
