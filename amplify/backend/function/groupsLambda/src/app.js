@@ -128,14 +128,13 @@ app.put(`${path}${hashKeyPath}/members`, async function(req, res) {
   }
   let updateItemParams = {
     TableName: tableName,
-    Key : {
-      [partitionKeyName]: guid
+    Key: {
+      [partitionKeyName]: guid,
     },
-    UpdateExpression : "SET members = :members",
+    UpdateExpression: "SET members = :members",
     ExpressionAttributeValues: {
       ":members": members,
     },
-    Item: req.body
   }
 
   try {
